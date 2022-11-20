@@ -5,7 +5,6 @@ resource "aws_ebs_volume" "ebsvolume" {
   tags = {
     Name = "azterravol"
   }
-
 }
 
 resource "aws_instance" "azterraec2" {
