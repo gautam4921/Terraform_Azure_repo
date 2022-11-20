@@ -6,7 +6,6 @@ resource "aws_ebs_volume" "ebsvolume" {
     Name = "azterravol"
   }
 }
-
 resource "aws_instance" "azterraec2" {
   ami = "ami-0cbf975b93d9cd3f9"
   instance_type = "t2.micro"
