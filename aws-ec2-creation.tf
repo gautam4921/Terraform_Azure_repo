@@ -14,7 +14,7 @@ resource "aws_ebs_volume" "ebsvolume" {
 }
 
 resource "aws_instance" "azterraec2" {
-  ami = "ami-0cbf975b93d9cd3f9"
+  ami = "ami-0aea78c3dfdcbb8cd"
   instance_type = "t2.micro"
   subnet_id = "subnet-092cdeac13b36beb4"
   vpc_security_group_ids = ["sg-039e7f1a6a983f220"]
