@@ -1,4 +1,5 @@
-name: Terraform-GitHub-Actionson:
+name: Terraform-GitHub-Actions
+on:
   push:
     branches: [ main ]
   pull_request:
