@@ -3,9 +3,11 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]env:
+    branches: [ main ]
+env:
   AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}jobs:
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
+jobs:
   build:
     name: build
     runs-on: ubuntu-latest
