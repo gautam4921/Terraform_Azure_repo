@@ -1,7 +1,5 @@
 provider "aws" {
     region = "us-east-2"
-    access_key = "AKIAUSGG6HHLD5BY4UGA"
-    secret_key = "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"
 }
 resource "aws_ebs_volume" "ebsvolume" {
   availability_zone = "us-east-2a"
