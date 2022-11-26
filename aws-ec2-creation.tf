@@ -1,5 +1,16 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "4.41.0"
+    }
+  }
+}
+
 provider "aws" {
-    region = "us-east-2"
+      region = "us-east-2"
+  # Configuration options
+    
 }
 resource "aws_ebs_volume" "ebsvolume" {
   availability_zone = "us-east-2a"
